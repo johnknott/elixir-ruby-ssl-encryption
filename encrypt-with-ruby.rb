@@ -20,7 +20,7 @@ cipher.iv = iv
 decrypted = cipher.update(encrypted) + cipher.final
 puts "Decrypted: #{decrypted}"
 
-# Write the important components out intoa file so Elixir can read them
+# Write the important components out into a file so Elixir can read them
 File.write('key', key)
 File.write('iv', iv)
 File.write('encrypted', encrypted)
